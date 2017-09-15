@@ -1,0 +1,409 @@
+*{
+    margin: 0px; padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: normal;
+    max-width: 100% !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%; max-height: 100%;
+}
+
+/*-- bagian pertama --*/
+#pertama{
+    background: url('asset/bg.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+
+    height: 650px;
+    padding-top: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+.konten{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.kolom-3{
+    width: 31%;
+    float: left;
+}
+
+.kolom-3-mid{
+    margin: 0 3%;
+}
+
+#logo{
+    display: block;
+    width: 6%;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+#logo-top{
+    display: block;
+    width: 6%;
+    margin: 15px auto 0 auto;
+    border-radius: 50px;
+}
+
+#menu{
+    background-color: #0b212e;
+    height: 50px; line-height: 50px;
+    font-size: 20px; margin-top: 20px;
+}
+
+#menu-text{
+    display: none;
+    color: white;
+    padding-left: 10px;
+}
+
+#menu a{
+    display: block; text-align: center; color: white;
+}
+
+#menu a:hover{
+    background-color: #0f2f42;
+}
+
+#box-sd{
+    background-color: rgba(11, 33, 46, 0.7);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 80px 0;
+    padding: 20px 0;
+}
+
+#box-sd a{
+    display: block;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 0;
+    width: 300px;
+    margin: 25px auto 0 auto;
+}
+
+#box-sd a:hover{
+    background-color: white;
+    color: #0f2f42;
+}
+
+/*-- bagian kedua --*/
+#kedua{
+    background-color: #0b212e;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-size: 40px;
+    padding: 30px 0 45px 0;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#kedua img{
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.setiap_karya_gambar{
+    position: relative;
+}
+
+.setiap_karya_gambar p{
+    position: absolute;
+    top: 0px; left: 25px;
+    width: 250px; height: 250px; line-height: 250px;
+    text-align: center; font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #0b212e;
+    border-radius: 50%;
+    display: none;
+}
+
+.setiap_karya_gambar:hover p{
+    display: block;
+}
+
+.deskripsi{
+    font-size: 22px;
+}
+
+
+/*-- bagian ketiga --*/
+.kolom-2{
+    float: left;
+    width: 46%;
+    margin: 0 1.5%;
+}
+
+#ketiga h2{
+    text-align: center;
+    color: #0b212e;
+}
+
+#ketiga input, #ketiga textarea{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 12px;
+    border: 2px solid #0b212e;
+}
+
+#ketiga textarea{
+    height: 130px;
+}
+
+input[type="submit"]{
+    background-color: #0b212e;
+    color: white;
+}
+
+input[type="submit"]:hover, .panah-box:hover{
+    cursor: pointer;
+    background-color: #0f2f42;
+}
+
+#ketiga iframe{
+    max-width: 450px;
+}
+
+/*-- bagian setiap folio --*/
+.panah-box{
+    width: 60px; height: 60px; line-height: 60px;
+    color: white; background-color: #0b212e;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 180px;
+}
+
+#karya-box{
+    width: 83%;
+    margin: 0 20px;
+}
+
+.panah-box, #karya-box, #karya-box-left, #karya-box-right{
+    float: left;
+}
+
+#karya-box-right{
+    width: 500px; height: 350px;
+}
+
+#karya-box-left{
+    width: 29%; padding: 30px 10px 0 10px;
+    height: 320px;
+    background-color: #0b212e;
+    color: white;
+}
+
+#karya-box-left h3{
+    font-size: 30px;
+    margin: 30px 0 20px 0;
+}
+
+#karya-box-left .deskripsi{
+    font-size: 18px;
+}
+
+#karya-lain{
+    width: 450px; margin: 50px auto 0 auto;
+}
+
+#karya-lain img{
+    display: block;
+    float: left;
+    width: 140px;
+    margin-left: 10px;
+}
+
+.error{
+    color: red;
+    margin-top: -12px;
+}
+
+/*-- bagian footer --*/
+#footer{
+    background-color: #0b212e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+#nav-icon{
+    display: none;
+}
+
+
+/*--------------------------------------
+/*---------------RSPNSV-----------------
+/*--------------------------------------*/
+
+@media only screen and (max-width: 1024px){
+
+    #box-sd{
+        font-size: 26px;
+    }
+
+    #pertama{
+        height: auto;
+    }
+
+    h2{
+        font-size: 34px;
+    }
+
+    .setiap_karya_gambar p{
+        position: static;
+        margin: 0 auto;
+        display: block;
+        height: auto;
+        color: white;
+        background-color: transparent;
+        line-height: normal;
+    }
+
+    /*-- untuk halaman folio --*/
+    #karya-box, #karya-box-left, #karya-box-right{
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    #karya_box img{
+        width: 100%;
+    }
+
+    #karya-box-left{
+        padding: 2%;
+        width: 86%;
+    }
+
+    .panah-box{
+        position: fixed;
+        top: 30%;
+    }
+
+    .panah-box-right{
+        right: 0%;
+    }
+
+    .panah-box-left{
+        left: 0%;
+    }
+
+    #karya-lain img{
+        width: 29%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+
+    #pertama{
+        background-attachment: fixed;
+    }
+
+    #menu{
+        position: relative;
+    }
+
+    #nav-icon{
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 10px;
+    }
+
+    .kolom-3, .kolom-2{
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    #box-sd{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    #kedua img{
+        width: 200px; height: 200px;
+    }
+
+    #kedua p{
+        font-size: 18px;
+    }    
+
+    #kedua .kolom-3{
+        margin: 10px auto;
+    }
+
+    /*-- untuk nav menu --*/
+    #menu .konten{
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    #menu-text{
+        display: block;
+    }
+
+    .menu-open{
+        max-height: 100% !important;
+    }
+
+    #menu{
+        height: auto;
+        font-size: 15px;
+    }
+
+    #menu a{
+        border-bottom: 1px solid white;
+    }
+
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

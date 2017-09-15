@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio UI</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function toggleMenu(){
+            var menu = document.getElementById('menu-3');
+            //IE > 10
+            menu.classList.toggle('menu-open');
+        }
+    </script>
+</head>
+<body>
+
+        <div id="header">
+            <img src="asset/sptr.png" id="logo-top" alt="">
+            <div id="menu">
+                <img src="asset/menu (2).png" id="nav-icon" alt="" onclick="toggleMenu();">
+                <div id="menu-text" onclick="toggleMenu();">Menu</div>
+                <div class="konten" id="menu-3">
+                    <a href="#pertama" class="kolom-3">Hallo</a>
+                    <a href="#kedua" class="kolom-3 kolom-3-mid" onclick="return smoothScroll('kedua')">Karya</a>
+                    <a href="#ketiga" class="kolom-3" onclick="return smoothScroll('ketiga')">Kontak</a>
+                </div>
+            </div>
+        </div>
+
+    <div style="margin-top:50px;"></div>
+
+    <div class="konten">
+        
+        <div class="panah-box panah-box-left" onclick="ganti_sebelum()"> < </div>
+
+            <div id="karya-box">
+                <div id="karya-box-left">
+                    <h3>Judul Karya</h3>
+                    <p class="deskripsi">Ini contoh deskripsi yang lebih panjang dari setiap karya yang ditampilkan</p>
+                </div>
+
+                <div id="karya-box-right">
+                    <img src="asset/1.png" alt="" id="target-gambar">
+                </div>
+            </div>
+
+        <div class="panah-box panah-box-right" onclick="ganti_berikut()"> > </div>
+
+            <div class="clear"></div>
+
+            <div id="karya-lain">
+                <img src="asset/1.png" alt="" onclick="ganti_gambar(this)" class="0">
+                <img src="asset/2.png" alt="" onclick="ganti_gambar(this)" class="1">
+                <img src="asset/3.png" alt="" onclick="ganti_gambar(this)" class="2">
+            </div>
+
+    </div>
+
+    <div class="clear"></div>
+    <div id="footer">
+        <p>&copy; sptrcode 2017</p>
+    </div>
+
+    <script src="folio.js"></script>
+</body>
+</html>
